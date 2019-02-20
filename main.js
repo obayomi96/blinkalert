@@ -17,9 +17,7 @@ function digitalClock() {
   }
   
   var weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat'];
-  
   var clock = weekdays[day] + ' ' + hours + ':' + minutes + ':' + seconds;
-  
   document.getElementById('clock').innerHTML = clock;
 } // date function end
 digitalClock();
@@ -27,28 +25,23 @@ setInterval(digitalClock, 1000);
 
 
 
-// 1,200,000 - 20minutes in miliseconds
-
-
 // Excercise display Controller
+
+
 var exercise = document.getElementById('modal');
-var closeExercise = document.getElementById('close');
+var closeExerciseBtn = document.getElementById('close');
 
 var displayExercise = function() {
-  window.alert('It has been 20 minutes, Please take your blink excercise');
+  // window.alert('It has been 20 minutes, Please take your blink excercise');
+  chrome.alarms.create(" Its been 20 minutes Take your 20-20-20 exercise now");
+  window.close();
   exercise.style.display = "block";
 };
-setInterval(displayExercise, 1200000);
+setInterval(displayExercise, 1200000); // 1,200,000 - 20minutes in miliseconds
 
 // Close exercise modal
-closeExercise.addEventListener('click', function() {
+closeExerciseBtn.addEventListener('click', function() {
+  chrome.alarms.clear("Done");
+  window.close();
   exercise.style.display = "none";
-  window.location = "index.html";
-});
-window.addEventListner('mouseup', function(e) {
-  e.preventDefault();
-  if(e.target != exercise && e.target.parentNode != exercise) {
-    exercise.style.display = "none";
-    window.location = "index.html";
-  }
 });
