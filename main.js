@@ -1,4 +1,5 @@
-// Realtime Date function in header
+// // Realtime Date function in header
+setInterval(digitalClock, 1000);
 function digitalClock() {
   var date = new Date();
   var hours = date.getHours() + '';
@@ -18,30 +19,58 @@ function digitalClock() {
   
   var weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat'];
   var clock = weekdays[day] + ' ' + hours + ':' + minutes + ':' + seconds;
-  document.getElementById('clock').innerHTML = clock;
+  document.getElementById('time').innerHTML = clock;
 } // date function end
-digitalClock();
-setInterval(digitalClock, 1000);
+
+
+// 20 minutes countdown timer
+// function countdown( elementName, minutes, seconds ) {
+//     var element, endTime, hours, mins, msLeft, time;
+
+//     function twoDigits( n ) {
+//         return (n <= 9 ? "0" + n : n);
+//     }
+
+//     function updateTimer() {
+//         msLeft = endTime - (+new Date);
+//         if ( msLeft < 1000 ) {
+//             element.innerHTML = "Take your 20-20-20 exercise now";
+//         } else {
+//             time = new Date( msLeft );
+//             hours = time.getHours();
+//             mins = time.getMinutes();
+//             element.innerHTML = (hours ? hours + ':' + twoDigits( mins ) : mins) + ':' + twoDigits( time.get() );
+//             setTimeout( updateTimer, time.getMilliseconds() + 500 );
+//         }
+//     }
+
+//     element = document.getElementById( elementName );
+//     endTime = (+new Date) + 1000 * (60*minutes + seconds) + 500;
+//     updateTimer();
+// } // countdown function end
+
+// countdown( "countdown", 20, 0 );
 
 
 
 // Excercise display Controller
 
 
-var exercise = document.getElementById('modal');
-var closeExerciseBtn = document.getElementById('close');
+const exercise = document.getElementById('modal');
+const closeExerciseBtn = document.getElementById('close');
 
-var displayExercise = function() {
+const displayExercise = function() {
   // window.alert('It has been 20 minutes, Please take your blink excercise');
-  chrome.alarms.create(" Its been 20 minutes Take your 20-20-20 exercise now");
-  window.close();
-  exercise.style.display = "block";
+  // chrome.alarms.create(" Its been 20 minutes Take your 20-20-20 exercise now");
+  // window.close();
+  // exercise.style.display = "block";
+  // alert("Yes");
 };
-setInterval(displayExercise, 1200000); // 1,200,000 - 20minutes in miliseconds
+setInterval(displayExercise, 10000); // 1,200,000 - 20minutes in miliseconds
 
 // Close exercise modal
-closeExerciseBtn.addEventListener('click', function() {
-  chrome.alarms.clear("Done");
-  window.close();
-  exercise.style.display = "none";
-});
+// closeExerciseBtn.addEventListener('click', function() {
+  // chrome.alarms.clear("Done");
+  // window.close();
+  // exercise.style.display = "none";
+// });

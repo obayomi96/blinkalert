@@ -1,34 +1,57 @@
 html,
 body {
+  text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   margin: 0;
-  min-height: 180px;
-  padding: 0;
+  padding: 0px;
+  height: 300px;
   width: 300px;
+  max-width: 400px;
 }
 header {
   text-align: center;
 }
-h1 {
-  color: grey;
-  font-size: 15px;
-  margin-bottom: 5px;
-}
-.clock {
+h3.title {
   color: black;
-  font-size: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
 }
+.version {
+  font-size: 15px;
+  color: grey;
+}
+#time {
+  /* display: inline; */
+  color: red;
+  font-size: 10px;
+  /* font-weight: bold; */
+  /* text-align: center; */
+  /* padding: 5px; */
+}
+/* div#countdown {
+  margin: 20px;
+  border: 20px;
+  display:inline;
+  color: #004853;
+  font-size: 60px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px;
+  text-align: center;
+} 
+*/
 .modal {
-    display: none;
+    display: block;
     position: relative;
-    margin-top: 30%;
+    margin-top: 20px;
     top: 50%;
     left: 50%;
+    border-radius: 5%;
     transform:translate(-50%,-50%);
     background: #fff;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 200px;
     box-sizing: border-box;
     box-shadow: 0 0 20px rgba(0,0,0,.2);
     z-index: 1;
@@ -56,9 +79,11 @@ h1 {
     }
     .bold{
       color: red;
+      background: white;
     }
     .rule {
       text-align: center;
       background-color: black;
       color: white;
+      text-transform: uppercase;
   }

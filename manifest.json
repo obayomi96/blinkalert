@@ -1,16 +1,25 @@
 {
 	"manifest_version": 2,
 	"name": "Blink Alert",
-	"description": "A reminder for a computer user to take the blinking exercise",
+	"description": "A reminder for a computer user to take the 20-20-20 blinking exercise every 20 minutes",
 	"version": "1.0.0",
-	"icons": {"128": "eyeIcon_128.png"},
+	"icons": {
+		"19": "images/eyeIcon.png",
+		"128": "images/eyeIcon_128.png",
+		"38": "images/cancel1.svg.png"
+	},
 	"browser_action": {
 		"default_icon": "eyeIcon.png",
 		"default_popup": "popup.html"
 	},
-    "permissions": ["activeTab", "alarms"],
     "background": {
-        "scripts": ["main.js"],
-        "persistent": false
-    }
+        "scripts": [
+			"main.js"
+		]
+	},
+	"permissions": [
+		"tabs", 
+		"alarms",
+		"notifications"
+	]
 }
