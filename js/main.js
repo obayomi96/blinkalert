@@ -1,5 +1,4 @@
-// // Realtime Date function in header
-setInterval(digitalClock, 1000);
+// Realtime Date function in header
 function digitalClock() {
   const date = new Date();
   let hours = date.getHours() + '';
@@ -21,6 +20,7 @@ function digitalClock() {
   const clock = weekdays[day] + ' ' + hours + ':' + minutes + ':' + seconds;
   document.getElementById('time').innerHTML = clock;
 } // date function end
+setInterval(digitalClock, 1000);
 
 
 // 20 minutes countdown timer
@@ -50,16 +50,3 @@ function digitalClock() {
 // } // countdown function end
 
 // countdown( "countdown", 20, 0 );
-
-
-
-// Excercise display Controller
-
-const displayExercise = function() {
-  // window.alert('It has been 20 minutes, Please take your blink excercise');
-  // chrome.alarms.create(" Its been 20 minutes Take your 20-20-20 exercise now");
-  // window.close();
-  // exercise.style.display = "block";
-  // alert("Yes");
-};
-setInterval(displayExercise, 10000); // 1,200,000 - 20minutes in miliseconds

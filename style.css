@@ -22,25 +22,9 @@ h3.title {
   color: grey;
 }
 #time {
-  /* display: inline; */
   color: red;
   font-size: 10px;
-  /* font-weight: bold; */
-  /* text-align: center; */
-  /* padding: 5px; */
 }
-/* div#countdown {
-  margin: 20px;
-  border: 20px;
-  display:inline;
-  color: #004853;
-  font-size: 60px;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 5px;
-  text-align: center;
-} 
-*/
 .modal {
     display: block;
     position: relative;
@@ -67,19 +51,10 @@ h3.title {
     width: 100%;
     box-sizing: border-box;
     }
-  .modal__header #close {
-      position: absolute;
-      top: 0;
-      right: 0;
-      font-weight: bold;
-      display: block;
-      padding: 0;
-      font-size: 30px;
-      height: 100%;  
-    }
     .bold{
       color: red;
       background: white;
+      border-top: 1px solid #ccc;
     }
     .rule {
       text-align: center;

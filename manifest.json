@@ -5,21 +5,20 @@
 	"version": "1.0.0",
 	"icons": {
 		"19": "images/eyeIcon.png",
-		"128": "images/eyeIcon_128.png",
-		"38": "images/cancel1.svg.png"
+		"128": "images/eyeIcon_128.png"
 	},
 	"browser_action": {
-		"default_icon": "eyeIcon.png",
+		"default_icon": "images/eyeIcon.png",
 		"default_popup": "popup.html"
 	},
     "background": {
         "scripts": [
-			"main.js"
+			"js/notification.js"
 		]
 	},
 	"permissions": [
-		"tabs", 
-		"alarms",
+		"tabs",
+		"activeTab", 
 		"notifications"
 	]
 }
