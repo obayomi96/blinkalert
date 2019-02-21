@@ -1,11 +1,11 @@
 // // Realtime Date function in header
 setInterval(digitalClock, 1000);
 function digitalClock() {
-  var date = new Date();
-  var hours = date.getHours() + '';
-  var minutes = date.getMinutes() + '';
-  var seconds = date.getSeconds() + '';
-  var day = date.getDay();
+  const date = new Date();
+  let hours = date.getHours() + '';
+  let minutes = date.getMinutes() + '';
+  let seconds = date.getSeconds() + '';
+  const day = date.getDay();
   
   if(hours.lenght < 2){
     hours = '0' + hours;
@@ -17,8 +17,8 @@ function digitalClock() {
     seconds = '0' + seconds;
   }
   
-  var weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat'];
-  var clock = weekdays[day] + ' ' + hours + ':' + minutes + ':' + seconds;
+  const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat'];
+  const clock = weekdays[day] + ' ' + hours + ':' + minutes + ':' + seconds;
   document.getElementById('time').innerHTML = clock;
 } // date function end
 
@@ -55,10 +55,6 @@ function digitalClock() {
 
 // Excercise display Controller
 
-
-const exercise = document.getElementById('modal');
-const closeExerciseBtn = document.getElementById('close');
-
 const displayExercise = function() {
   // window.alert('It has been 20 minutes, Please take your blink excercise');
   // chrome.alarms.create(" Its been 20 minutes Take your 20-20-20 exercise now");
@@ -67,10 +63,3 @@ const displayExercise = function() {
   // alert("Yes");
 };
 setInterval(displayExercise, 10000); // 1,200,000 - 20minutes in miliseconds
-
-// Close exercise modal
-// closeExerciseBtn.addEventListener('click', function() {
-  // chrome.alarms.clear("Done");
-  // window.close();
-  // exercise.style.display = "none";
-// });
