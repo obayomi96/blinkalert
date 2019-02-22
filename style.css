@@ -22,8 +22,10 @@ h3.title {
   color: grey;
 }
 #time {
+  text-align: center;
   color: red;
   font-size: 10px;
+  font-weight: bold;
 }
 .modal {
     display: block;
