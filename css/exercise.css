@@ -54,3 +54,6 @@ h1 {
   background: #555;
   height: 100%;
 }
+.rule {
+  font-weight: bold;
+}
