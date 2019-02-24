@@ -1,11 +1,11 @@
 html,
 body {
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   margin: 0;
   padding: 0px;
-  height: 300px;
+  height: 150px;
   width: 300px;
   max-width: 400px;
 }
@@ -18,8 +18,9 @@ h3.title {
   border-bottom: 1px solid #ccc;
 }
 .version {
-  font-size: 15px;
+  font-size: 7px;
   color: grey;
+  padding: 10px;
 }
 #time {
   text-align: center;
@@ -28,39 +29,72 @@ h3.title {
   font-weight: bold;
 }
 .modal {
-    display: block;
-    position: relative;
-    margin-top: 20px;
-    top: 50%;
-    left: 50%;
-    border-radius: 5%;
-    transform:translate(-50%,-50%);
-    background: #fff;
-    width: 90%;
-    height: 200px;
-    box-sizing: border-box;
-    box-shadow: 0 0 20px rgba(0,0,0,.2);
-    z-index: 1;
-  }
-  
-  .modal__header {
-    padding: 0;
-    color: white;
-    background: #333;
-    text-align: center;
-    position: relative;
-    height: 30px;
-    width: 100%;
-    box-sizing: border-box;
-    }
-    .bold{
-      color: red;
-      background: white;
-      border-top: 1px solid #ccc;
-    }
-    .rule {
-      text-align: center;
-      background-color: black;
-      color: white;
-      text-transform: uppercase;
-  }
+  display: block;
+  position: relative;
+  margin-top: 20px;
+  top: 50%;
+  left: 50%;
+  border-radius: 5%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 90%;
+  height: 200px;
+  box-sizing: border-box;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.modal__header {
+  padding: 0;
+  color: white;
+  background: #333;
+  text-align: center;
+  position: relative;
+  height: 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.bold {
+  color: red;
+  background: white;
+  border-top: 1px solid #ccc;
+}
+.rule {
+  text-align: center;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+}
+.modal-icons {
+  border-top: 0.5px solid #dadada;
+  height: 50px;
+  width: 100%;
+}
+.logo {
+  padding: 16px;
+}
+.logo-icon {
+  vertical-align: text-bottom;
+  margin-right: 12px;
+}
+.version {
+  color: #444;
+  font-size: 18px;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 22px;
+}
+.flex {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+  width: 120px;
+}
+.flex:hover {
+  opacity: 0.4;
+}
+.flex .fa {
+  font-size: 40px;
+  color: #2f5876;
+}

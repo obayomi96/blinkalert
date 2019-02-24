@@ -7,6 +7,17 @@ const options = {
   iconUrl: "images/eyeIcon_128.png"
 };
 
-setInterval(function() {
-  chrome.notifications.create(options)
-}, 1200000); // Create notifications every 20 minutes
+// Create notifications every 20 minutes 1200000 millisecons
+// setInterval(function() {
+//   chrome.notifications.create(options)
+// }, 10000);
+
+// // Create a new tab onclick of notification
+// chrome.notifications.onClicked.addListener(function() {
+//   chrome.tabs.create({url: "exercise.html"});
+// });
+
+// Show alert box onclick of notification
+// chrome.notifications.onClicked.addListener(function() {
+//   alert('Look Away From Your Computer, Look at something 20 feets away for 20 seconds. (BLINK AS MANY TIMES AS YOU CAN)');
+// });
