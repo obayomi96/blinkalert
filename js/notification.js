@@ -8,14 +8,14 @@ const options = {
 };
 
 // Create notifications every 20 minutes 1200000 millisecons
-// setInterval(function() {
-//   chrome.notifications.create(options)
-// }, 10000);
+setInterval(function() {
+  chrome.notifications.create(options)
+}, 1200000);
 
-// // Create a new tab onclick of notification
-// chrome.notifications.onClicked.addListener(function() {
-//   chrome.tabs.create({url: "exercise.html"});
-// });
+// Create a new tab onclick of notification
+chrome.notifications.onClicked.addListener(function() {
+  chrome.tabs.create({url: "exercise.html"});
+});
 
 // Show alert box onclick of notification
 // chrome.notifications.onClicked.addListener(function() {
