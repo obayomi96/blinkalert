@@ -2,18 +2,25 @@
   padding: 0px 20px 0px 20px;
 }
 body {
+  text-align: center;
   background-color: grey;
 }
 header {
   text-align: center;
+  margin-bottom: 30px;
 }
 h1 {
   color: white;
 }
-.clock {
+.countdown-timer {
+  border: 5px solid white;
+  display: inline;
+  padding: 5px;
   color: black;
-  font-size: 15px;
-  padding: 20px;
+  font-family: Verdana, sans-serif, Arial;
+  font-size: 35px;
+  font-weight: bold;
+  text-decoration: none;
 }
 .modal {
   display: block;
@@ -55,5 +62,5 @@ h1 {
   height: 100%;
 }
 .rule {
-  font-weight: bold;
+  font-weight: bolder;
 }

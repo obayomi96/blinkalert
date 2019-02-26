@@ -15,7 +15,6 @@ header {
 h3.title {
   color: black;
   padding: 10px;
-  border-bottom: 1px solid #ccc;
 }
 .version {
   font-size: 7px;
@@ -27,43 +26,6 @@ h3.title {
   color: red;
   font-size: 10px;
   font-weight: bold;
-}
-.modal {
-  display: block;
-  position: relative;
-  margin-top: 20px;
-  top: 50%;
-  left: 50%;
-  border-radius: 5%;
-  transform: translate(-50%, -50%);
-  background: #fff;
-  width: 90%;
-  height: 200px;
-  box-sizing: border-box;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.modal__header {
-  padding: 0;
-  color: white;
-  background: #333;
-  text-align: center;
-  position: relative;
-  height: 30px;
-  width: 100%;
-  box-sizing: border-box;
-}
-.bold {
-  color: red;
-  background: white;
-  border-top: 1px solid #ccc;
-}
-.rule {
-  text-align: center;
-  background-color: black;
-  color: white;
-  text-transform: uppercase;
 }
 .modal-icons {
   border-top: 0.5px solid #dadada;
