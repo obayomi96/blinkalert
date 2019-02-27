@@ -6,13 +6,13 @@ function digitalClock() {
   let seconds = date.getSeconds() + "";
   const day = date.getDay();
 
-  if (hours.lenght < 2) {
+  if (hours.length < 2) {
     hours = "0" + hours;
   }
-  if (minutes.lenght < 2) {
+  if (minutes.length < 2) {
     minutes = "0" + minutes;
   }
-  if (seconds.lenght < 2) {
+  if (seconds.length < 2) {
     seconds = "0" + seconds;
   }
 
@@ -40,8 +40,7 @@ function countdown(elementName, minutes, seconds) {
       mins = time.getUTCMinutes();
       element.innerHTML =
         (hours ? "0" + ":" + twoDigits(mins) : mins) +
-        ":" +
-        twoDigits(time.getUTCSeconds());
+        ":" + twoDigits(time.getUTCSeconds());
       setTimeout(updateTimer, time.getUTCMilliseconds() + 500);
     }
   } // updateTimer function end
