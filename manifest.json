@@ -13,7 +13,7 @@
 	},
     "background": {
         "scripts": [
-			"js/notification.js"
+			"js/background.js"
 		]
 	},
 	"permissions": [
