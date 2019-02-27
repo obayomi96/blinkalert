@@ -5,48 +5,63 @@ body {
   font-size: 14px;
   margin: 0;
   padding: 0px;
-  height: 150px;
+  height: 300px;
   width: 300px;
   max-width: 400px;
 }
 header {
   text-align: center;
+  border-bottom: 0.5px solid #dadada;
 }
 h3.title {
   color: black;
   padding: 10px;
 }
 .version {
-  font-size: 7px;
+  font-size: 10px;
   color: grey;
   padding: 10px;
 }
-#time {
+.time {
   text-align: center;
   color: red;
   font-size: 10px;
   font-weight: bold;
+  padding-bottom: 3px;
+}
+
+.rule {
+  padding-top: 5px;
+  font-size: 12px;
+  color: dimgrey;
+  font-weight: bold;
+
+}
+.modal {
+  box-sizing: border-box;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  padding: 3px 10px 3px 10px;
+  text-align: center;
 }
 .modal-icons {
+  bottom: 0;
   border-top: 0.5px solid #dadada;
-  height: 50px;
+  height: 30px;
   width: 100%;
 }
 .logo {
-  padding: 16px;
+  padding: 15px;
 }
 .logo-icon {
   vertical-align: text-bottom;
   margin-right: 12px;
 }
-.version {
-  color: #444;
-  font-size: 18px;
-}
 .flex-container {
   display: flex;
   justify-content: space-between;
   padding: 10px 22px;
+  bottom: 0;
 }
 .flex {
   opacity: 1;
