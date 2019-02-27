@@ -1,27 +1,3 @@
-// Realtime Date function in header
-function digitalClock() {
-  const date = new Date();
-  let hours = date.getHours() + "";
-  let minutes = date.getMinutes() + "";
-  let seconds = date.getSeconds() + "";
-  const day = date.getDay();
-
-  if (hours.length < 2) {
-    hours = "0" + hours;
-  }
-  if (minutes.length < 2) {
-    minutes = "0" + minutes;
-  }
-  if (seconds.length < 2) {
-    seconds = "0" + seconds;
-  }
-
-  const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
-  const clock = weekdays[day] + " " + hours + ":" + minutes + ":" + seconds;
-  document.getElementById("time").innerHTML = clock;
-} // date function end
-setInterval(digitalClock, 1000);
-
 // 20 minutes countdown timer
 function countdown(elementName, minutes, seconds) {
   let element, endTime, hours, mins, msLeft, time;
