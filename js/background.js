@@ -3,7 +3,7 @@ const options = {
   type: "basic",
   title: "Blink Alert! - Its been 20 minutes!",
   message:
-    "Look Away From Your Computer, Look at something 20 feets away for 20 seconds. (CLICK HERE TO TAKE EXERCISE)",
+    "Look away from your Computer, Look at something 20 feet away for 20 seconds. (CLICK HERE TO TAKE EXERCISE)",
   iconUrl: "images/eyeIcon_128.png"
 };
 
