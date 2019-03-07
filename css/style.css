@@ -36,9 +36,6 @@ h3.title {
   margin: auto;
 }
 
-h6 {
-  text-transform: capitalize;
-}
 .rule {
   font-size: 0.8rem;
   color: dimgrey;
