@@ -10,7 +10,7 @@ const options = {
 // Create notifications every 20 minutes 1200000 millisecons
 setInterval(function() {
   chrome.notifications.create(options)
-}, 1200000);
+}, 3600000);
 
 // Create a new tab onclick of notification
 chrome.notifications.onClicked.addListener(function() {

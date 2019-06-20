@@ -22,12 +22,25 @@ h3.title {
   color: grey;
   padding: 10px;
 }
-.time {
-  text-align: center;
-  color: red;
-  font-size: 10px;
-  font-weight: bold;
-  padding-bottom: 3px;
+
+#notifyInterval {
+  outline: none;
+  margin-bottom: 15px;
+  color: grey;
+  padding: 5px;
+  border-radius: 10px;
+  border: 0.1rem #eee solid;
+}
+#save {
+  color: grey;
+  background: #fff;
+  outline: none;
+  border-radius: 4px;
+  padding: 5px;
+  border: 0.1rem #eee solid;
+}
+#save:hover {
+  opacity: 0.5;
 }
 
 .modal {
@@ -76,6 +89,6 @@ h3.title {
   opacity: 0.4;
 }
 .flex .fa {
-  font-size: 40px;
+  font-size: 20px;
   color: #2f5876;
 }
