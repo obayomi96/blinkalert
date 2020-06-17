@@ -23,6 +23,23 @@ h3.title {
   padding: 10px;
 }
 
+.select-div {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.select-div > select {
+  margin-left: 5px;
+}
+
+.select-div > select > option {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  outline: none;
+}
+
 #notifyInterval {
   outline: none;
   margin-bottom: 15px;

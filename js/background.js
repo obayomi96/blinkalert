@@ -7,10 +7,11 @@ const options = {
   iconUrl: "images/eyeIcon_128.png"
 };
 
+var optionVal = document.getElementById('duration').value;
 // Create notifications every 20 minutes 1200000 millisecons
 setInterval(function() {
   chrome.notifications.create(options)
-}, 3600000);
+}, optionVal);
 
 // Create a new tab onclick of notification
 chrome.notifications.onClicked.addListener(function() {
