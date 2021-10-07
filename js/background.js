@@ -7,12 +7,12 @@ const options = {
   iconUrl: "images/eyeIcon_128.png"
 };
 
-// var select = document.getElementById('duration');
-// var value = select.options[select.selectedIndex].value;
+var select = document.getElementById('duration');
+var value = select.options[select.selectedIndex].value;
 // Create notifications every 20 minutes 1200000 millisecons
 setInterval(function() {
   chrome.notifications.create(options)
-}, 1200000);
+}, value || 1200000);
 
 // Create a new tab onclick of notification
 chrome.notifications.onClicked.addListener(function() {
