@@ -20,52 +20,25 @@
     <title>Blink Alert</title>
   </head>
   <header>
-    <h3 class="title">Blink Alert <span class="version">(2.1)</span></h3>
+    <h3 class="title">Blink Alert <span class="version">  <a class="flex" href="https://www.github.com/obayomi96" target="_blank">
+      <i class="fa fa-github"></i>
+    </a></span></h3>
   </header>
   <body>
     <div class="select-div">
-      <div>
-        <b>Select duration</b>
+      <b>Select duration</b>
+      <div class="select-main">
+        <button class="durationBtn durationBtn1" id="durationBtn1">20 min</button>
+        <button class="durationBtn durationBtn2" id="durationBtn2">1 hour</button>
+        <button class="durationBtn durationBtn3" id="durationBtn3">2 hours</button>
       </div>
-      <select id="duration" name="duration">
-        <option value="1200000" selected>20 Min</option>
-        <option value="3600000">1 Hour</option>
-        <option value="7200000">2 Hours</option>
-      </select>
     </div>
     <div class="modal">
       <h6>20-20-20 RULE<h6>
-          <div class="rule">
-            Look away from your computer, look at something 20 feet away for 20 seconds.<br> -BLINK AS MANY TIMES AS YOU CAN
-          </div>
-    </div>
-    <div class="modal-icons">
-      <div class="flex-container">
-        <div class="flex">
-          <a
-            href="https://www.linkedin.com/in/martins-obayomi-998202162/"
-            target="_blank"
-          >
-            <i class="fa fa-linkedin"></i>
-          </a>
-        </div>
-        <div class="flex">
-          <a href="https://www.github.com/obayomi96" target="_blank">
-            <i class="fa fa-github"></i>
-          </a>
-        </div>
-        <div class="flex">
-          <a href="https://www.twitter.com/Oluwaseungifted" target="_blank">
-            <i class="fa fa-twitter"></i>
-          </a>
-        </div>
-        <div class="flex">
-          <a href="https://www.instagram.com/obayomimartins" target="_blank">
-            <i class="fa fa-instagram"></i>
-          </a>
-        </div>
+      <div class="rule">
+        Look away from your computer, look at something 20 feet away for 20 seconds.<br> -BLINK AS MANY TIMES AS YOU CAN
       </div>
     </div>
-    <script src="js/background.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>

@@ -1,23 +1,25 @@
 {
-	"manifest_version": 2,
+	"manifest_version": 3,
 	"name": "Blink Alert",
 	"description": "A reminder for a computer user to take the 20-20-20 blinking exercise at set intervals",
-	"version": "2.2",
+	"version": "2.5",
 	"icons": {
 		"19": "images/eyeIcon.png",
 		"128": "images/eyeIcon_128.png"
 	},
-	"browser_action": {
-		"default_icon": "images/eyeIcon.png",
+	"action": {
+		"default_icon": {
+			"16": "images/eyeIcon.png",
+			"48": "images/eyeIcon.png",
+			"128": "images/eyeIcon_128.png"
+		},
 		"default_popup": "popup.html"
 	},
-    "background": {
-        "scripts": [
-			"js/background.js"
-		]
-	},
 	"permissions": [
-		"notifications"
+		"notifications",
+		"storage"
 	],
-	"content_security_policy": "script-src 'self'; object-src 'self'"
+	"content_security_policy": {
+		"extension_pages": "script-src 'self'; object-src 'self'"
+	}
 }

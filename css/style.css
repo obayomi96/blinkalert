@@ -10,12 +10,16 @@ body {
   max-width: 400px;
 }
 header {
-  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 0.5px solid #dadada;
 }
 h3.title {
   color: black;
+  text-align: center;
   padding: 10px;
-  border-bottom: 0.5px solid #dadada;
 }
 .version {
   font-size: 10px;
@@ -25,19 +29,40 @@ h3.title {
 
 .select-div {
   width: 90%;
-  margin: 0 auto;
+  margin: 20px auto auto auto;
+}
+
+.select-div > b {
+  text-align: center§;
+  margin-bottom: 5px;
+}
+
+.select-main {
+  padding-top: 20px;
   display: flex;
   justify-content: center;
 }
 
-.select-div > select {
-  margin-left: 5px;
+.durationBtn {
+  background-color: #dadada;
+  border: #2f5876;
+  color: #2f5876;
+  border-radius: 5px;
+  width: auto;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
-.select-div > select > option {
-  border: 1px solid #ddd;
-  border-radius: 2px;
-  outline: none;
+.durationBtn:hover {
+  opacity: 0.8;
+}
+
+.btnSelected {
+  background-color: #2f5876;
+  border: #dadada;
+  color: #dadada;
 }
 
 #notifyInterval {
