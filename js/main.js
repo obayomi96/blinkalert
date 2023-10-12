@@ -26,3 +26,35 @@ function countdown(elementName, minutes, seconds) {
   updateTimer();
 } // countdown function end
 countdown("countdown-timer", 0, 20);
+// const countdown = (elementName, minutes, seconds) => {
+//   let element = 0,
+//     endTime = 0,
+//     hours = 0,
+//     mins = 0,
+//     msLeft = 0,
+//     time = 0;
+//   // Make countdown double digits when less that 10
+//   const twoDigits = (n) => {
+//     return n <= 9 ? "0" + n : n;
+//   };
+//   // Timer counter update
+//   const updateTimer = () => {
+//     msLeft = endTime - +new Date();
+//     if (msLeft < 1000) {
+//       element.innerHTML = "Take a break";
+//     } else {
+//       time = new Date(msLeft);
+//       hours = time.getUTCHours();
+//       mins = time.getUTCMinutes();
+//       element.innerHTML =
+//         (hours ? minutes + ":" + twoDigits(mins) : mins) +
+//         ":" +
+//         twoDigits(time.getUTCSeconds());
+//       setTimeout(updateTimer, time.getUTCMilliseconds() + 500);
+//     }
+//   }; // updateTimer function end
+
+//   element = document.getElementById(elementName);
+//   endTime = +new Date() + 1000 * (60 * minutes + seconds) + 500;
+//   updateTimer();
+// }; // countdown function end

@@ -21,7 +21,7 @@ h3.title {
   text-align: center;
   padding: 10px;
 }
-.version {
+.github {
   font-size: 10px;
   color: grey;
   padding: 10px;
@@ -99,26 +99,7 @@ h3.title {
   border: 0.1rem #eee solid;
 }
 
-.modal-icons {
-  bottom: 0;
-  border-top: 0.5px solid #dadada;
-  height: 30px;
-  width: 100%;
-}
-.logo {
-  padding: 15px;
-}
-.logo-icon {
-  vertical-align: text-bottom;
-  margin-right: 12px;
-}
-.flex-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 22px;
-  bottom: 0;
-}
-.flex {
+.github-a {
   opacity: 1;
   transition: opacity 0.2s ease-in-out;
   width: 120px;
@@ -127,10 +108,23 @@ h3.title {
   margin: 0;
   padding: 0;
 }
-.flex:hover {
+
+.github-a:hover {
   opacity: 0.4;
 }
-.flex .fa {
+
+.github-a .fa {
   font-size: 20px;
   color: #2f5876;
+}
+
+#popup-timer {
+  border: 1px solid #dadada;
+  display: inline;
+  padding: 5px;
+  color: black;
+  font-family: Verdana, sans-serif, Arial;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
 }

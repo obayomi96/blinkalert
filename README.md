@@ -1,4 +1,4 @@
-## BLINKALERT CHROME EXTENSION (Version 3.0.0)
+## BLINKALERT CHROME EXTENSION (Version 3.0.3)
 
 ###### DESCRIPTION
 
@@ -14,6 +14,7 @@
  ###### FEATURES
  
  * Reminder at 20 minutes interval to, rest and take the 20-20-20 exercise.
+ * You can select between 3 options of duration interval.
  * Leads you through the exercise procedures in a new tab.
 
 ###### AUTHOR
