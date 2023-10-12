@@ -2,7 +2,7 @@
 	"manifest_version": 3,
 	"name": "Blink Alert",
 	"description": "A reminder for a computer user to take the 20-20-20 blinking exercise at set intervals",
-	"version": "3.0.1",
+	"version": "3.0.2",
 	"icons": {
 		"19": "images/eyeIcon.png",
 		"128": "images/eyeIcon_128.png"
@@ -16,7 +16,8 @@
 		"default_popup": "popup.html"
 	},
 	"permissions": [
-		"notifications"
+		"notifications",
+		"storage"
 	],
 	"content_security_policy": {
 		"extension_pages": "script-src 'self'; object-src 'self'"
