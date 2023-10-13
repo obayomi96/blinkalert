@@ -2,7 +2,7 @@
 	"manifest_version": 3,
 	"name": "Blink Alert",
 	"description": "A reminder for a computer user to take the 20-20-20 blinking exercise at set intervals",
-	"version": "3.0.2",
+	"version": "3.0.3",
 	"icons": {
 		"19": "images/eyeIcon.png",
 		"128": "images/eyeIcon_128.png"
