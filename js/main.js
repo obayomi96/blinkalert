@@ -15,7 +15,8 @@ function countdown(elementName, minutes, seconds) {
       mins = time.getUTCMinutes();
       element.innerHTML =
         (hours ? "0" + ":" + twoDigits(mins) : mins) +
-        ":" + twoDigits(time.getUTCSeconds());
+        ":" +
+        twoDigits(time.getUTCSeconds());
       setTimeout(updateTimer, time.getUTCMilliseconds() + 500);
     }
   }
