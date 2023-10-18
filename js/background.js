@@ -40,6 +40,7 @@ chrome.runtime.onInstalled.addListener(() => {
   });
 });
 
+/* Using the latest manifest v3, chrome intentionally removed persistent background script activities on service workers, this renders the bacground script inactive after 10 minutes (5 seconds for inactive windows), the logic below keeps chrome running by getting the platform info every few seconds. There are more recommended number of ways to keep your background script active here https://stackoverflow.com/questions/66618136/persistent-service-worker-in-chrome-extension  */
 const keepAlive = () => setInterval(chrome.runtime.getPlatformInfo, 20e3);
 chrome.runtime.onStartup.addListener(keepAlive);
 keepAlive();

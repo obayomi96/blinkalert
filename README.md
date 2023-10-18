@@ -15,7 +15,6 @@
  
  * Reminder at 20 minutes interval to, rest and take the 20-20-20 exercise.
  * You can select between 3 options of duration interval.
- * Displays a visual timer on the extension popup for time left till next break.
  * Leads you through the exercise procedures in a new tab.
 
 ###### AUTHOR
