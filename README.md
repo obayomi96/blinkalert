@@ -14,8 +14,10 @@
  ###### FEATURES
  
  * Reminder at 20 minutes interval to, rest and take the 20-20-20 exercise.
- * You can select between 3 options of duration interval.
+ * You can select between few options of duration interval.
+ * Visual slider to set duration
  * Leads you through the exercise procedures in a new tab.
+ * Turn-off or turn-on Blink alert notification
 
 ###### AUTHOR
 
