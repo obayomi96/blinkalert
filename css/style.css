@@ -5,7 +5,7 @@ body {
   font-size: 14px;
   margin: 0;
   padding: 0px;
-  height: 300px;
+  height: 400px;
   width: 300px;
   max-width: 400px;
 }
@@ -118,13 +118,8 @@ h3.title {
   color: #2f5876;
 }
 
-#popup-timer {
-  border: 1px solid #dadada;
-  display: inline;
-  padding: 5px;
-  color: black;
-  font-family: Verdana, sans-serif, Arial;
-  font-size: 14px;
-  font-weight: normal;
-  text-decoration: none;
+.settings {
+  width: 100%;
+  display: flex;
+  padding: 10px;
 }
