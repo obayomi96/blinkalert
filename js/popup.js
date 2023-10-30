@@ -104,15 +104,15 @@ durationBtn3.addEventListener("click", () => {
   setDuration(7200000);
   durationSlider.value = "3";
 });
-durationBtn3.addEventListener("click", () => {
-  setDuration(1080000);
-  durationSlider.value = "3";
-});
 durationBtn4.addEventListener("click", () => {
+  setDuration(1080000);
+  durationSlider.value = "4";
+});
+durationBtn5.addEventListener("click", () => {
   setDuration(14400000);
   durationSlider.value = "5";
 });
-durationBtn5.addEventListener("click", () => {
+durationBtn6.addEventListener("click", () => {
   setDuration(18000000);
   durationSlider.value = "6";
 });
