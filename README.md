@@ -1,4 +1,4 @@
-## BLINKALERT CHROME EXTENSION (Version 3.0.3)
+## BLINKALERT CHROME EXTENSION
 
 ###### DESCRIPTION
 **Chrome extension to remind you to take the 20-20-20 rule sight exercise and also leads you through the exercise process after you have worked with a computer screen for a period of time.**
@@ -19,7 +19,4 @@
  * Visual slider to set duration
  * Leads you through the exercise procedures in a new tab.
  * Turn-off or turn-on Blink alert notification
-
-###### AUTHOR
-
-* _Martins Obayomi_
+ 
