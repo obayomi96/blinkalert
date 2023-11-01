@@ -2,7 +2,7 @@
 
 
 ## How can this PR (Update) be manually tested?
-- Check the updated extension on chrome store or clone this repo and load the unpacked extension
+- Check the updated extension on Chrome Store or clone this repo and load the unpacked extension
 
 ## Other Information / Background Context
 
