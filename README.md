@@ -1,5 +1,7 @@
 ## BLINKALERT CHROME EXTENSION
 
+<!-- GitAds-Verify: CQV7FK9F24VZWKNEEB38XZ6G97TCAJ4D -->
+
 ###### DESCRIPTION
 **Chrome extension to remind you to take the 20-20-20 rule sight exercise and also leads you through the exercise process after you have worked with a computer screen for a period of time.**
 
