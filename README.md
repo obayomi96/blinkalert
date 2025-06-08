@@ -2,6 +2,10 @@
 
 <!-- GitAds-Verify: CQV7FK9F24VZWKNEEB38XZ6G97TCAJ4D -->
 
+## GitAds Sponsored
+[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=obayomi96/blinkalert@github)](https://gitads.dev/v1/ad-track?source=obayomi96/blinkalert@github)
+
+
 ###### DESCRIPTION
 **Chrome extension to remind you to take the 20-20-20 rule sight exercise and also leads you through the exercise process after you have worked with a computer screen for a period of time.**
 
